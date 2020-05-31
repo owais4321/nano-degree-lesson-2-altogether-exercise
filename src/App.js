@@ -25,9 +25,7 @@ class App extends Component {
     }
 
 changeHandler=(event)=>{
-if (event.target.name==='fname') this.setState({fname:event.target.value})
-else if(event.target.name==='lname') this.setState({lname:event.target.value})
-else if(event.target.name==='uname') this.setState({uname:event.target.value})
+this.setState({[event.target.name]:event.target.value})
 }
 
 checkUserExists=(uname)=>{

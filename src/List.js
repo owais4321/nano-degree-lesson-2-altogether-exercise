@@ -4,6 +4,7 @@ const List=props=>(
 <ol>	
 {props.users.map((user)=>(
      <ListItem
+  	key={user.uname}
   	fname={user.fname}
 	lname={user.lname}
 	uname={user.uname}
